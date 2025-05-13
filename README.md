@@ -3,7 +3,7 @@ This project focuses on detecting and tracking AR (Augmented Reality) markers in
 
 Applications span gaming, robotics, interactive media, education, and AR-enhanced navigation.
 
-▶️ Usage
+ Usage
 Prerequisites
 Python 3.x
 
@@ -24,6 +24,16 @@ Edit
 python marker_detection.py
 Make sure your webcam is connected and a printable AR marker is available in view.
 
+Technology Used
+Python 3.x – Primary programming language for implementing the detection pipeline.
+
+OpenCV (opencv-contrib-python) – Computer vision library used for image processing, marker detection, and pose estimation. The contrib package includes the aruco module.
+
+NumPy – For efficient array and matrix operations.
+
+ArUco Marker Library – OpenCV module for detecting square fiducial markers (dictionary-based).
+
+Camera Calibration (optional) – For accurate 3D pose estimation and perspective rendering using cv2.calibrateCamera().
 🧠 Code Description
 marker_detection.py – Main script for real-time marker detection and augmentation.
 
@@ -42,8 +52,7 @@ If detected, the pose (position + orientation) of the marker is estimated.
 
 Virtual elements (e.g., 3D cubes or overlays) are drawn on top of the marker in the correct perspective.
 
-
-💡 Use Cases
+ Use Cases
 AR gaming: Place 3D characters or environments on a table.
 
 Robotics: Help robots localize objects or navigate environments.
